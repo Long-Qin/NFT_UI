@@ -1,7 +1,7 @@
 import { Button, Modal, Skeleton, Table, Tooltip } from "antd";
 import { useEffect, useState } from "react";
 import { InfoCircleOutlined } from "@ant-design/icons";
-import { getNFTTransfers } from "../uils"; 
+import { getNFTTransfers } from "../utils"; 
 
 const columns = [
     {

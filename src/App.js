@@ -1,8 +1,9 @@
 import { Layout, Button, Input, List, Card, message } from "antd";
 import { useState } from 'react';
-import { getContractNFTs } from "./uils";
+import { getContractNFTs } from "./utils";
 import "./App.css";
 import NftCard from "./components/NftCards";
+import ContractTrades from "./components/ContractTrades";
 
 const { Header, Content } = Layout;
 
@@ -45,6 +46,7 @@ function App() {
             onChange={(e) => setSearchText(e.target.value)}
           />
           <Button type="primary" onClick={handleSearch}>Search</Button>
+          <ContractTrades tokenAddress={searchText} />
         </Input.Group>
         <List 
           style={{
